@@ -8,6 +8,10 @@ import humidity_icon from '../assets/humidity.png';
 import rain_icon from '../assets/rain.png';
 import snow_icon from '../assets/snow.png';
 import wind_icon from '../assets/wind.png';
+import pressure_icon from '../assets/pressure.png';
+import sunrise_icon from '../assets/sunrise.png';
+import sunset_icon from '../assets/sunset.png';
+import visibility_icon from '../assets/visibility.png';
 
 const Weather = () => {
 const inputRef = useRef();
@@ -214,6 +218,7 @@ return (
                                 </div>
                                 <div className="stat-item">
                                     <i className="fas fa-tachometer-alt"></i>
+                                    <img src={pressure_icon} alt="pressure" />
                                     <div>
                                         <p className="stat-value">{weatherData.pressure} hPa</p>
                                         <p className="stat-label">Pressure</p>
@@ -221,6 +226,7 @@ return (
                                 </div>
                                 <div className="stat-item">
                                     <i className="fas fa-eye"></i>
+                                    <img src={visibility_icon} alt="visibility" />
                                     <div>
                                         <p className="stat-value">{weatherData.visibility} km</p>
                                         <p className="stat-label">Visibility</p>
@@ -228,6 +234,7 @@ return (
                                 </div>
                                 <div className="stat-item">
                                     <i className="fas fa-sun"></i>
+                                    <img src={sunrise_icon} alt="sunrise" />
                                     <div>
                                         <p className="stat-value">{weatherData.sunrise}</p>
                                         <p className="stat-label">Sunrise</p>
@@ -235,6 +242,7 @@ return (
                                 </div>
                                 <div className="stat-item">
                                     <i className="fas fa-moon"></i>
+                                    <img src={sunset_icon} alt="sunset" />
                                     <div>
                                         <p className="stat-value">{weatherData.sunset}</p>
                                         <p className="stat-label">Sunset</p>
