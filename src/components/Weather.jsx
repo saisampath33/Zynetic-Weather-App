@@ -245,7 +245,7 @@ return (
                     </div>
 
                     <div className='forecast-section'>
-                        <h3>4-Day Forecast</h3>
+                        <h3>5-Day Forecast</h3>
                         <div className='forecast-container'>
                             {forecast.map((day, index) => (
                                 <div key={index} className='forecast-card'>
@@ -263,6 +263,8 @@ return (
                     </div>
                 </div>
             )}
+
+            
 
             {!weatherData && !loading && (
                 <div className="welcome-screen">
